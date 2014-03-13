@@ -21,12 +21,14 @@ data = {
     'html':con,
     'recipient-variables':'{"liyonghelpme@foxmail.com":{"name":"liyonghelpme"}, "liyonghelpme@gmail.com":{"name":"gmailme"}}',
     'to':['liyonghelpme@foxmail.com', 'liyonghelpme@gmail.com'],
-    'subject':'Hello, %%recipient.name%%',
+    'subject':'Hello, %recipient.name%',
+    'text':'mail from caesars game studio'
 }
 r = 'https://api.mailgun.net/v2/caesarsgame.com/messages'
 
 aukey = ('api', 'key-4gvn2lebl2z9lquwo4kb72w2y31gv7-5')
 
+print len(data['html'])
 r = requests.post(r, auth=aukey, data=data)
 print r
 print r.text
