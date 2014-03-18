@@ -19,8 +19,8 @@ con = con.read()
 data = {
     'from': 'caesars game <lhr@caesarsgame.com>',
     'html':con,
-    'recipient-variables':'{"liyonghelpme@foxmail.com":{"name":"liyonghelpme"}, "liyonghelpme@gmail.com":{"name":"gmailme"}}',
-    'to':['liyonghelpme@foxmail.com', 'liyonghelpme@gmail.com'],
+    'recipient-variables':'{"liyonghelpme@foxmail.com":{"name":"liyonghelpme"}, "liyonghelpme@gmail.com":{"name":"gmailme"}, "lhr7654321@gmail.com":{"name":"lianghaoran"}, "caesars321@gmail.com":{"name":"caesars game"}}',
+    'to':['liyonghelpme@foxmail.com', 'liyonghelpme@gmail.com', 'caesars321@gmail.com', 'lhr7654321@gmail.com'],
     'subject':'Hello, %recipient.name%',
     'text':'mail from caesars game studio'
 }
